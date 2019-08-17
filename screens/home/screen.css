@@ -1,0 +1,85 @@
+
+
+a.homescreen{
+    background: url(/krtuna/images/tp-profile-white.png) no-repeat;
+    color: white;
+    background-position: -15px -16px;
+    background-size: 80px 80px;
+    padding-left: 3.5em;
+    font-size: large;
+    display: block;
+}
+
+.home-icon .icon{
+	width:2.5em;
+	height:2em;
+	float:left;
+	margin-right:0.6em;
+	margin-top:-0.1em;
+	background-image:url('/krtuna/images/tp-garage.png');
+	background-size:2.5em 2em;
+}
+
+.profile-link{
+	background-image:url('/krtuna/images/tp-profile-2.png');
+}
+
+.understeering-link{
+	background-image:url('/krtuna/images/tp-under.png');
+}
+
+.oversteering-link{
+	background-image:url('/krtuna/images/tp-over.png');
+}
+
+.tyre-link{
+	background-image:url('/krtuna/images/tp-tyre-temp-1.png');
+}
+
+.feedback-link{
+	border-top:solid silver 1px;
+	padding-left: 1.2em;
+    	margin-left: 0;
+}
+
+.star{
+	margin-left:0em;
+	margin-right:0.5em;
+	width:37px;
+	font-size:1.5em;
+	display:block;
+	color:rgb(0, 155, 155);
+	font-family:arial,sans-sarif;
+}
+
+a.back {
+    background: url(/krtuna/images/tp-back-arrow-white.png) no-repeat;
+    color: white;
+    background-position: 1px 16px;
+    background-size: 20px 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: large;
+	display: block;
+	margin-right:2em;
+}
+
+.empty-profile .pulse-if-empty-profile{
+     animation: shadow-pulse 1s infinite;
+     position:absolute;
+     border-radius:50%;
+     width:2.5em;
+     height:2.5em;
+     margin-left:-3.5em;
+     margin-top:-0.5em;
+     display:block;
+     border:solid transparent 3px;
+}
+@keyframes shadow-pulse{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+}

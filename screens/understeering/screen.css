@@ -1,0 +1,17 @@
+#understeer-return{
+	background-image:url('/krtuna/images/tp-under.png');
+}
+
+
+#understeering_turnentry_link{
+	background-image:url('/krtuna/images/tp-turn-entry.png');
+}
+
+#understeering_turnapex_link{
+	background-image:url('/krtuna/images/tp-turn-apex.png');
+}
+
+#understeering_turnexit_link{
+	background-image:url('/krtuna/images/tp-turn-exit.png');
+}
+

@@ -1,0 +1,33 @@
+.has_camber_front .hide_with_camber_front{
+	display:none !important;
+}
+
+.has_camber_rear .hide_with_camber_rear{
+	display:none !important;
+}
+
+#tyres a{
+	display:block;
+}
+
+#tyres{
+}
+
+#tyre_inner_f_link{
+	background-image:url('/krtuna/images/tp-front-inner.png');
+}
+#tyre_outer_f_link{
+	background-image:url('/krtuna/images/tp-front-outer.png');
+}
+#tyre_middle_f_link{
+	background-image:url('/krtuna/images/tp-front-middle.png');
+}
+#tyre_inner_r_link{
+	background-image:url('/krtuna/images/tp-rear-inner.png');
+}
+#tyre_outer_r_link{
+	background-image:url('/krtuna/images/tp-rear-outer.png');
+}
+#tyre_middle_r_link{
+	background-image:url('/krtuna/images/tp-rear-middle.png');
+}

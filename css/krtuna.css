@@ -1,0 +1,285 @@
+body, html {
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background:white;
+}
+
+screen {
+	display: none;
+	padding: 0 0 3em 0;
+	margin: 0;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow:hidden;
+}
+
+screen > main{
+	position: relative;
+    overflow-y: scroll;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+	display: inline;
+	line-height:2em;
+	text-decoration:none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	margin:0;
+	font-size:100%;
+	display:block;
+	padding:0.5em;
+	padding-left:3.5em;
+	border:none;
+	color:#101b21;
+	text-align:left;
+	font-size:large;
+	text-decoration: none;
+}
+
+
+header>h1{
+	display:inline;
+	color:#ebebeb;
+	margin-left:0.2em;
+	font-size:x-large;
+}
+
+.home-link{
+	background-image:url('/krtuna/images/tp-arrow-black.png');
+	background-size:contain;
+}
+
+main>h2{
+	padding:0.5em;
+	margin:0;
+	padding-left:1em;
+	border:none;
+	border-top:solid #c8c8c8 1px;
+	color: #101b21;
+	text-align:left;
+	font-size:small;
+	font-weight:normal;
+	background:white;
+	line-height:2em
+}
+
+screen h3{
+	padding:0.5em;
+	margin:0;
+	padding-left:1em;
+	border:none;
+	border-bottom:solid #c8c8c8 1px;
+	color: #101b21;
+	text-align:left;
+	font-size:small;
+	font-weight:normal;
+	background:white;
+	line-height:2em
+	
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+screen > header{
+	display:block;
+	padding-left:0.5em;
+    overflow: hidden;
+    background: #006c6d;
+    width:100%;
+}
+
+main > a{
+	margin-left:0.5em;
+}
+
+#install_app_prompt{
+	border: solid #dbdbdb 1px;
+	border-radius: 10px;
+	padding:0.5em;
+	background-color: #ffffff;
+	margin: 1em;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+#install_app_prompt button{
+	border-radius: 10px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#closebutton{
+	background-color: white;
+	color: rgba(0, 155, 155, 1);
+	border: none;
+}
+
+button#installAppButton {
+    border: none;
+    background-color: rgba(0, 155, 155, 1);
+    color: white;
+    margin-left: 1em;
+}
+.feedback-link{
+	text-decoration:none;
+}
+.star{
+	margin-left:17px;
+	width:40px;
+	font-size:1.5em;
+	display:block;
+	float:left;
+	color:#0099BB;
+	font-family:arial,sans-sarif;
+}
+
+.solutions li.always-visible{
+	display:block;
+}
+
+.collapsible{
+	display:block;
+	overflow:hidden;
+}
+
+.collapsible button{
+	padding: 1em;
+    margin-top: -1px;
+    width: 100%;
+    border: none;
+    border-top: solid #dbdbdb 1px;
+    border-left: solid #8a8a8a 5px;
+    color: #333333;
+    text-align: left;
+    font-size: large;
+    background: white;
+    cursor: pointer;
+}
+
+.collapsible.active button{
+	border-left-color: rgb(0, 155, 155);
+}
+.collapsible .items{
+	display:none;
+}
+
+.active .items{
+	display:block;
+}
+
+.items > a{
+	text-decoration:none;
+	background-size: contain;
+	background-repeat:no-repeat;
+	padding-left: 3em;
+	margin-left: 1em;
+}
+
+
+.solutions li{
+	display:none;
+	padding-bottom: 1em;
+}
+
+#splashscreen{
+	display:none;
+	background-image:url('/krtuna/images/tp-welcome.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	text-align: center;
+}
+
+#splashscreen .message{
+	background-color:white;
+	font-weight:bold;
+	margin-top:2em;
+	padding:0.5em;
+}
+
+.loading #splashscreen{
+	display:block;
+}
+
+button.dropdown {
+    float: right;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+#app_menu{
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:10;
+}
+
+#app_menu button{
+    	padding: 10px 10px;
+    	color: white;
+    	margin-right: 0.5em;
+    	background: transparent;
+    	border: none;
+    	font-weight: bold;
+    	font-size: large;
+    	width: 2em;
+    	position: fixed;
+    	right: 0;
+}
+
+#app_menu .items{
+	display:none;
+	background-color:white;
+	outline:solid black 1px;
+}
+
+.app-menu-expanded #app_menu .items{
+	display:block;
+}
+
+#app_menu .items .item{
+	margin-left:0;
+	padding-left:0.5em;
+}
+
+.smoke-screen{
+	position:absolute;
+	z-index:2;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(0,0,0,0.5);
+	display:none;
+}
+
+.app-menu-expanded .smoke-screen{
+	display:block;
+}
