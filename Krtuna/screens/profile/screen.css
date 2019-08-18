@@ -1,0 +1,98 @@
+.done-button{
+	font-size:small;
+	color:rgba(0, 155, 155, 1);
+	float:right;
+	text-align:center;
+	width:20%;
+}
+
+category{
+	display:block;
+	background:white;
+}
+
+category .part-icon{
+	width:3em;
+	height:3em;
+	filter: grayscale(100%);
+	background-size: 3em 3em;
+	float:left;
+	margin-right:1em;
+	margin-left:1em;
+}
+
+.part-row{
+	border-top:solid #8a8a8a px;
+	cursor:pointer;
+}
+
+.part-row .label{
+	line-height:3em;
+	color:#484848;
+}
+
+.enabled .part-icon{
+	filter: grayscale(0%);
+}
+
+.part-row.enabled .label{
+	color:#000000;
+}
+
+#shock_bump_front .part-icon{
+	background-image:url('/krtuna/images/tp-shock-bump.png')
+}
+
+#shock_rebound_front .part-icon{
+	background-image:url('/krtuna/images/tp-shock-rebound.png')
+}
+
+#swaybar_front .part-icon{
+	background-image:url('/krtuna/images/tp-swaybar.png')
+}
+
+#camber_front .part-icon{
+	background-image:url('/krtuna/images/tp-camber-front.png')
+}
+#castor .part-icon{
+	background-image:url('/krtuna/images/tp-castor.png')
+}
+#toe_front .part-icon{
+	background-image:url('/krtuna/images/tp-toe-front.png')
+}
+#ride_height_front .part-icon{
+	background-image:url('/krtuna/images/tp-ride-height-front.png')
+}
+#spring_rate_front .part-icon{
+	background-image:url('/krtuna/images/tp-spring-rate.png')
+}
+#aero_front .part-icon{
+	background-image:url('/krtuna/images/tp-aero-front.png')
+}
+#brake_bias .part-icon{
+	background-image:url('/krtuna/images/tp-brake-bias.png')
+}
+#shock_bump_rear .part-icon{
+	background-image:url('/krtuna/images/tp-shock-bump.png')
+}
+#shock_rebound_rear .part-icon{
+	background-image:url('/krtuna/images/tp-shock-rebound.png')
+}
+#swaybar_rear .part-icon{
+	background-image:url('/krtuna/images/tp-swaybar.png')
+}
+#camber_rear .part-icon{
+	background-image:url('/krtuna/images/tp-camber-rear.png')
+}
+#toe_rear .part-icon{
+	background-image:url('/krtuna/images/tp-toe-rear.png')
+}
+#ride_height_rear .part-icon{
+	background-image:url('/krtuna/images/tp-ride-height-rear.png')
+}
+#spring_rate_rear .part-icon{
+	background-image:url('/krtuna/images/tp-spring-rate.png')
+}
+#aero_rear .part-icon{
+	background-image:url('/krtuna/images/tp-aero-rear.png')
+}

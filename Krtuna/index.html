@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<link rel="canonical" href="https://ggeorgovassilis.github.io/krtuna" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F0F0F0">
+<meta charset="UTF-8">
+<title>krtuna</title>
+<link rel=manifest href="/krtuna/manifest.json">
+<link rel=stylesheet href="/krtuna/css/krtuna.css">
+<link rel=stylesheet href="/krtuna/screens/home/screen.css">
+<link rel=stylesheet href="/krtuna/screens/profile/screen.css">
+<link rel=stylesheet href="/krtuna/screens/understeering/screen.css">
+<link rel=stylesheet href="/krtuna/screens/oversteering/screen.css">
+<link rel=stylesheet href="/krtuna/screens/welcome/screen.css">
+<link rel=stylesheet href="/krtuna/screens/tyres/screen.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71747779-4"></script>
+</head>
+<body class=loading>
+<div class=smoke-screen onclick="App.smokeScreenClicked()"></div>
+<div class=screens>
+<div id="app_menu"><button onclick="AppMenu.toggle(event)">⋮</button>
+<div class=items>
+<a class=item href="#welcome2">Help</a>
+<a class=item href="contact.html">Contact us</a>
+<a class=item href="disclaimer.html">Terms and conditions</a>
+<a class=item href="javascript:void()" onclick="App.checkForUpdates();return false">Check for updates</a>
+<a class=item href="javascript:void()" onclick="App.update();return false">Force-reload app</a>
+</div>
+</div>
+</div>
+<div id="install_app_prompt" style="display:none">
+<p class="install-text">Would you like to install Krtuna on your device so it works offline?</p>
+<button id="installAppButton" onclick="App.installApp()">Ok</button>
+<button id="closebutton" onclick="App.hideInstallPrompt()">Remind me later</button>
+</div>
+<div id=splashscreen>
+<div class=message>krtuna loading...</div>
+</div>
+<script>//<![CDATA[
+document.createElement('categories');
+document.createElement('category');
+document.createElement('part');
+document.createElement('screen');
+let App={};
+
+// load jquery from localhost for local development and from google CDN in production
+(function(){
+function injectScript(url, onload){
+	console.log("inject script",url);
+	var script = document.createElement("script");
+	script.setAttribute("type","text/javascript");
+	script.setAttribute("src",url);
+	script.setAttribute("async","true");
+	script.onload=onload;
+	(document.getElementsByTagName("head"))[0].append(script);
+}
+
+function jqueryLoaded(){
+	console.log("jquery loaded");
+	$.ajaxSetup({
+		  cache: true
+	});
+
+	$.ajax({
+		  url: "js/init.js",
+		  dataType: "script",
+		  success: function(){
+			App.initialize();		  
+		  }
+	});
+}
+if ((""+window.location).indexOf("localhost")!=-1)
+	injectScript("js/jquery.min.js", jqueryLoaded);
+else
+	injectScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", jqueryLoaded);
+})();
+//]]>
+</script>
+</body>
+</html>
