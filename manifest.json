@@ -3,17 +3,17 @@
   "name": "Krtuna - Suspension tuning tool",
   "icons": [
     {
-    "src": "/krtuna/images/icon192.png",
+    "src": "/images/icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-     "src": "/krtuna/images/icon512.png",
+     "src": "/images/icon512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/krtuna/index.html",
+  "start_url": "/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/krtuna/",
