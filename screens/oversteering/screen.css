@@ -1,16 +1,16 @@
 #oversteer-return{
-	background-image:url('/krtuna/images/tp-over.png');
+	background-image:url('/images/tp-over.png');
 }
 
 #oversteering_turnentry_link{
-	background-image:url('/krtuna/images/tp-turn-entry.png');
+	background-image:url('/images/tp-turn-entry.png');
 }
 
 #oversteering_turnapex_link{
-	background-image:url('/krtuna/images/tp-turn-apex.png');
+	background-image:url('/images/tp-turn-apex.png');
 }
 
 #oversteering_turnexit_link{
-	background-image:url('/krtuna/images/tp-turn-exit.png');
+	background-image:url('/images/tp-turn-exit.png');
 }
 
