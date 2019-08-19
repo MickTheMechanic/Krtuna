@@ -103,7 +103,7 @@ App.checkForUpdates=function(){
 	console.log("Checking for new version");
 	$.ajax({
 		  dataType: "json",
-		  url: "/krtuna/js/version.js",
+		  url: "/js/version.js",
 		  success: function(data){
 			  var version = localStorage.getItem("version");
 			  if (!version){ // version not stored yet, just take server version and stop
@@ -142,7 +142,7 @@ App.smokeScreenClicked=function(){
 function registerServiceWorker(){
 	if ('serviceWorker' in navigator) {
 			console.log("registering service worker...");
-		  navigator.serviceWorker.register('/krtuna/service-worker.js', {scope: '/krtuna/'})
+		  navigator.serviceWorker.register('/service-worker.js', {scope: '/krtuna/'})
 		  .then(function(reg) {
 			App.serviceWorkerRegistration=reg;
 		    // registration worked
